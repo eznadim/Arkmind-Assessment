@@ -1,0 +1,43 @@
+.layout-container {
+  min-height: 100vh !important;
+}
+
+.header {
+  background: white !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 !important;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  max-width: 1800px;
+  margin: 24px auto !important;
+  padding: 0 24px !important;
+}
+
+.content-header {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Remove previous styles that might conflict */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
