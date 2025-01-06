@@ -1,50 +1,12 @@
-# React + TypeScript + Vite
+Frontend Setting up:
+1. Check environment.env file. Make sure the url and port is the same as backend [app.ts]
+2. Run command "npm i" to install dependencies. Run another command "npm install antd @ant-design/icon" to install UI/UX library.
+3. To run our frontend, run command "npm run dev". This is because we are doing development-specific tasks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+API Endpoints Details:
+- Frontend uses axios to connect backend API to frontend [api.ts]
+- Frontend uses Redux Toolkit to improve readability of code and easier to maintain [itemSlice.ts]
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Future enhancements:
+- As this is my first proper project using Redux Toolkit, there are lots of ways to improve in terms of scalability and efficient-wise.
+- Other improvements that can be done are proper UI/UX with more clarity, better placement and user-friendly for user.
